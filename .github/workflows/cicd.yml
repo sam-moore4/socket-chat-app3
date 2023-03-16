@@ -42,7 +42,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCsecrets.DOCKER_HUB_USERNAME }}/socket-chat-app3:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/socket-chat-app3:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest}}
